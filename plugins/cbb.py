@@ -43,13 +43,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "premium":
         await query.message.edit_text(
-            text=f"Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\n<blockquote>Pricing Rates\n7 Days - INR 39\n15 Days - INR 69\n1 Month - INR 89\n3 Months - INR 249\n6 Months - INR 479\n12 Month - Contact <a href=https://t.me/WhiteBeard_Sama>Owner</a></blockquote>\n\n<blockquote>Want To Buy?\nUsing UPI 8527282574@ybl\nSend Screenshot to <a href=https://t.me/WhiteBeard_Sama>Owner</a></blockquote>\n\nWe Have Limited Seats For Premium Users",
+            text=f"Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\n<blockquote>Pricing Rates\n7 Days - INR 39\n15 Days - INR 69\n1 Month - INR 100\n3 Months - INR 249\n6 Months - INR 479\n12 Month - Contact <a href=https://t.me/shitnigga_bot>Owner</a></blockquote>\n\n<blockquote>Want To Buy?\nUsing UPI narang07@fam\nSend Screenshot to <a href=https://t.me/sinsfull_bot>Owner</a></blockquote>\n\nWe Have Limited Seats For Premium Users",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Owner", url="https://t.me/WhiteBeard_Sama"),
-                        InlineKeyboardButton("Main Channel", url="https://t.me/+sOF6oYv8MPVmOGQ1")
+                        InlineKeyboardButton("Owner", url="https://t.me/km_portal"),
+                        InlineKeyboardButton("Main Channel", url="https://t.me/+cPHof45LIckwNzNl")
                     ],
                     [
                         InlineKeyboardButton("🔒 Close", callback_data="close")

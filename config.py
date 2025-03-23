@@ -1,4 +1,4 @@
-#Recoded by @Its_Oreki_Hotarou
+#Recoded by @km_portal
 
 import os
 import logging
@@ -40,14 +40,14 @@ FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/rGX.jpg")
 
 #text
 HELP_TXT = "<blockquote><b>Hi Dude!\n\nTo use this bot you just have to join both channels that's it..\nWatch Tutorial to open Link - <a href=https://t.me/+75lYowcxb8dhZDk0>Clickhere</a></b></blockquote>"
-ABOUT_TXT = "<blockquote><b><i>About Us..\n\n‣ Made for : <a href=https://tg://settings>ClickHere</a>\n‣ Owned by : @xclusive_backup\n‣ Maintained by : @km_portal\n‣ Developed by : @xclusive_backup\n\n Adios !!</i></b></blockquote>"
+ABOUT_TXT = "<blockquote><b><i>About Us..\n\n‣ Made for : <a href=https://t.me/laurenbale>ClickHere</a>\n‣ Owned by : @sinsfull_bot\n‣ Maintained by : @km_portal\n‣ Developed by : @xclusive_backup\n\n Adios !!</i></b></blockquote>"
 SHORT_MSG = "<b>⌯ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴏᴘᴇɴ ʟɪɴᴋ ʙᴜᴛᴛᴏɴ..</b>"
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/XCLUSIVE_BACKUP>XCLUSIVE</a></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....! WORKING FOR @KM_PORTAL\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/XCLUSIVE_BACKUP>XCLUSIVE NEWS</a></b>")
 try:
     ADMINS=[8002331168]
-    for x in (os.environ.get("ADMINS", "8002331168 1418213560").split()):
+    for x in (os.environ.get("ADMINS", "8002331168").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -62,21 +62,21 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'False'
 
 #Short Url or Api
 SHORT_URL = os.environ.get("SHORTNER_URL", "inshorturl.com")
 SHORT_API = os.environ.get("SHORTNER_API", "786738384ac77b80411044814ad3004ec0720f76")
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @km_portal"
+USER_REPLY_TEXT = "Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - @xclusive_backup @km_portal"
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
-DEL_TIMER = int(os.environ.get("DEL_TIMER", "1800"))
-DEL_MSG = "<b>This File is deleting automatically in {time}. Forward in your Saved Messages..!</b>"
+DEL_TIMER = int(os.environ.get("DEL_TIMER", "300"))
+DEL_MSG = "<b>This File is deleting automatically in {time}. Forward in your Saved Messages..! by @shitnigga_bot</b>"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1418213560)
+ADMINS.append(879520667)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
@@ -100,5 +100,3 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
-
-#Bhen ke lavdo Credit hataya na ma choddunga wahi aakr salo use karo bas 
